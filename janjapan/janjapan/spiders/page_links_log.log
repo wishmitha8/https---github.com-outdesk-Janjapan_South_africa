@@ -1,0 +1,29 @@
+2023-02-19 23:06:15 [scrapy.core.scraper] ERROR: Spider error processing <GET https://janjapan.com/stock/location/s.africa%20durban-14/1> (referer: None)
+Traceback (most recent call last):
+  File "c:\office\janjapan\venv\lib\site-packages\scrapy\utils\defer.py", line 257, in iter_errback
+    yield next(it)
+  File "c:\office\janjapan\venv\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "c:\office\janjapan\venv\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "c:\office\janjapan\venv\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "c:\office\janjapan\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "c:\office\janjapan\venv\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "c:\office\janjapan\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 353, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "c:\office\janjapan\venv\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "c:\office\janjapan\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "c:\office\janjapan\venv\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "c:\office\janjapan\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "c:\office\janjapan\venv\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\office\janjapan\janjapan\janjapan\spiders\start.py", line 29, in parse
+    lst_page = round(int(lst_page[-10:-5])/25)+1
+TypeError: 'NoneType' object is not subscriptable

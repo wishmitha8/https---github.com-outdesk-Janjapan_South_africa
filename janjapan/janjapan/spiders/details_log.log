@@ -1,0 +1,88 @@
+2023-03-01 16:26:48 [scrapy.core.scraper] ERROR: Spider error processing <GET https://janjapan.com/used-car/safrica-durban/mercedes/c-class/871517#car_detail_gsllary> (referer: None)
+Traceback (most recent call last):
+  File "C:\office\janjapan\venv\lib\site-packages\pandas\core\indexes\base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'link'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\utils\defer.py", line 257, in iter_errback
+    yield next(it)
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 353, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:/office/janjapan/janjapan/janjapan/spiders/details.py", line 47, in parse
+    lks = lnks['link'].values.tolist()
+  File "C:\office\janjapan\venv\lib\site-packages\pandas\core\frame.py", line 3807, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\office\janjapan\venv\lib\site-packages\pandas\core\indexes\base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 'link'
+2023-03-01 16:49:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://janjapan.com/used-car/safrica-durban/mercedes/c-class/871517#car_detail_gsllary> (referer: None)
+Traceback (most recent call last):
+  File "C:\office\janjapan\venv\lib\site-packages\pandas\core\indexes\base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'link'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\utils\defer.py", line 257, in iter_errback
+    yield next(it)
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\utils\python.py", line 312, in __next__
+    return next(self.data)
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 353, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "C:\office\janjapan\venv\lib\site-packages\scrapy\core\spidermw.py", line 104, in process_sync
+    for r in iterable:
+  File "C:/office/janjapan/janjapan/janjapan/spiders/details.py", line 47, in parse
+    lks = lnks['link'].values.tolist()
+  File "C:\office\janjapan\venv\lib\site-packages\pandas\core\frame.py", line 3807, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\office\janjapan\venv\lib\site-packages\pandas\core\indexes\base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 'link'
